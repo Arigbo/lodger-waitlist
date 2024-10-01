@@ -1,5 +1,5 @@
-@import "./congrats.css";
-@import "./index.css";
+@import "/congrats.css";
+@import "/index.css";
 * {
   margin: 0;
   padding: 0;
