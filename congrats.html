@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Congrats</title>
+      <link rel="stylesheet" href="./styles/custom.css">
+      <script src="./styles/"></script>
+</head>
+
+<body>
+      <main class="welcome">
+
+            <h1>The count-down till we <span>launch</span></h1>
+            <p>Welcome <span class="message"></span>, you're part of our waitlist</p>
+            <div>
+                  <ul>
+                        <div>
+                              <li class="seconds">00</li>
+                              <li>Seconds</li>
+                        </div>
+                        <div>
+                              <li class="minutes">00</li>
+                              <li>Minutes</li>
+                        </div>
+                        <div>
+                              <li class="hours">00</li>
+                              <li>Hour</li>
+                        </div>
+                        <div>
+                              <li class="days">00</li>
+                              <li>Day</li>
+                        </div>
+                  </ul>
+            </div>
+      </main>
+</body>
+<script>
+      var countDownDate = new Date("Dec 30, 2024 00:00:00").getTime()
+      var x = setInterval(function () {
+            var now = new Date().getTime()
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24))
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            var minutes = Math.floor((distance % (1000 * 60 * 60 * 60)) / (1000 * 60))
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+            document.querySelector(".days").innerHTML = days
+            document.querySelector(".hours").innerHTML = hours
+            document.querySelector(".minutes").innerHTML = minutes
+            document.querySelector(".seconds").innerHTML = seconds
+      }, 1000)
+      document.querySelector(".message").innerHTML = `${localStorage.getItem("firstname")} ${localStorage.getItem("lastname")}`;
+</script>
+
+</html>

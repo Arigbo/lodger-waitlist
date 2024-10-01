@@ -1,0 +1,25 @@
+.welcome {
+  background-color: rgb(86, 105, 16);
+  align-items: center;
+}
+.welcome .message {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.welcome ul {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.welcome ul div {
+  text-align: center;
+}
+.welcome ul li {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.welcome ul :nth-child(2) {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=congrats.css.map */

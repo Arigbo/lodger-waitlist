@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lodger</title>
+      <link rel="stylesheet" href="./styles/custom.css">
+      <script src="./script.js"></script>
+</head>
+
+<body>
+      <main>
+            <section>
+                  <div>
+                        <div class="logo"></div>
+                  </div>
+                  <div>
+                        <h1>Join <img src="" alt="">our Waitlist</h1>
+                  </div>
+            </section>
+            <section>
+                  <form class="form" action="./congrats.html">
+                        <div class="form_top">
+                              <input type="text" placeholder="First Name" class="firstname" required oninput="welcome()">
+                              <input type="text" placeholder="Second Name" class="secondname" oninput="welcome()" required>
+                        </div>
+                        <div>
+                              <input type="email" name="" id="" class="email" placeholder="Email" oninput="emailChecker()" onchange="welcome()">
+                              <p class="email_message"></p>
+                        </div>
+                 <input type="submit" class="btn" onclick="welcome()">
+                  </form>
+            </section>
+      </main>
+      <footer>
+            <div></div>
+            <div></div>
+      </footer>
+</body>
+</html>

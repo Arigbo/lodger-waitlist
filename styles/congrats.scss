@@ -1,0 +1,30 @@
+.welcome {
+  background-color: rgb(86, 105, 16);
+  align-items: center;
+
+  .message {
+    text-transform: capitalize;
+    font-weight: 900;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      text-align: center;
+    }
+
+    li {
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    :nth-child(2) {
+      font-size: 0.9rem;
+    }
+  }
+}
